@@ -15,5 +15,12 @@
 void	ft_putstr(char *str);
 void	ftputchar(char a);
 void	error_message(void);
+void start(char *val);
+int	**creation_tab(int value, int row, int column);
+void malloc_tab(int **tab);
+void	ft_print_tab(int tab[4][4]);
+void	populate_tab(char *val, int ***tab);
+int verif(int size, char *val);
+
 
 #endif

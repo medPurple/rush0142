@@ -9,22 +9,44 @@
 /*   Updated: 2022/07/16 14:23:54 by wmessmer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <rush.h>
+//#include <ft_rush.h>
 
-int ft_backtrack(char **tab, int size, int nb)
+int verif(int size, char *val)
 {
-    int i;
-    int x;
-    int y;
+    int c1;
+    int c2;
+    int c3;
+    int c4;
 
-    if (n == size*size)
-        return (1);
-    x = n % (size/4);
-    y = n / (size/4);
-    i = 0;
-    while ( i <=size)
+    c1,c2,c3,c4 = 0;
+    if ( size != 2 || *val == "\0")
+        error_message();
+    while (*val)
     {
-        tab[y][x] = i;
-    }
+        if ((val != ' ' && val != '1' && val != '2'
+		&& val != '3' && val != '4'))
+            error_message();
 
+		else if ((i % 2 != 0) && val != ' ')
+            error_message();
+        
+		vall++;
+	}
+    while (values[i])
+	{
+		if (val == '1')
+			c1++;
+		else if (val == '2')
+			c2++;
+		else if (val == '3')
+			c3++;
+        else if (val == '4')
+		if (c1 > 4 || c2 > 8 || c3 > 8 || c4 > 4)
+		{
+			error_message();
+		}
+		i++;
+	}
+    start(val);
 }
+

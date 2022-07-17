@@ -10,10 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
+//#include <ft_rush.h>
 
 void	error_message(void)
 {
 	ft_putstr("Error\n");
+	return (0);
 }
 
 void	ftputchar(char a)
@@ -29,7 +31,7 @@ void	ft_putstr(char *str)
 		str++;
 	}
 }
-int		getsize(char *size)
+/*int		getsize(char *size)
 {
 	int	i;
 	int	taille;
@@ -48,4 +50,4 @@ int		getsize(char *size)
 	if !(taille % 4 = 0)
 		return (0);
 	return (taille);
-}
+}*/
